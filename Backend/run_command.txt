@@ -1,0 +1,29 @@
+uvicorn app.main:app --reload --host 0.0.0.0 --port 443 --ssl-keyfile app/certs/cert.key --ssl-certfile app/certs/cert.crt
+
+9197,607,669,7687,6033,8350
+
+
+
+
+Session from DB Operation: <sqlalchemy.orm.session.Session object at 0x0000019B1FEFD010>
+DB Operation: Existing Entry: <db.models.ProcessData object at 0x0000019B1ED6B150>
+
+
+Session Local :<sqlalchemy.orm.session.Session object at 0x0000018C7D54EDD0>
+
+
+
+#--------------------------------------------------------------
+
+
+SMTP_SERVER="smtpbcc.axisb.com"
+SMTP_PORT=2255
+SMTP_USERNAME='BRS.AutoMail@axisfinance.in'
+SMTP_PASSWORD='Mumbaiaxis@2025'
+CONNECTION_STRING_SERVER=""
+DATABASE_NAME=""
+
+FTP_HOST="10.9.129.47"
+FTP_PORT=22
+SFTP_USERNAME="SAP_Treasury"
+SFTP_PASSWORD="Mumbai#2025"

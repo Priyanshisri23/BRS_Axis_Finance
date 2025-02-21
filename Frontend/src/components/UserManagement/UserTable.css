@@ -1,0 +1,198 @@
+.user-table-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .search-container {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6e0f3b;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #6e0f3b;
+    box-shadow: 0 0 0 3px rgba(110, 15, 59, 0.1);
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.875rem;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .user-table th {
+    background-color: #6e0f3b;
+    color: white;
+    font-weight: 600;
+    text-transform: none;
+    font-size: 0.875rem;
+  }
+  
+  .user-table tbody tr:hover {
+    background-color: #f7fafc;
+  }
+  
+  .status-indicator {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .status-indicator.active {
+    background-color: #c6f6d5;
+    color: #22543d;
+  }
+  
+  .status-indicator.inactive {
+    background-color: #fed7d7;
+    color: #822727;
+  }
+  
+  .status-indicator.superuser {
+    background-color: #e9d8fd;
+    color: #553c9a;
+  }
+  
+  .status-indicator.regular {
+    background-color: #e2e8f0;
+    color: #2d3748;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .action-buttons button {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    color: #4299e1;
+  }
+  
+  .edit-button:hover {
+    background-color: #ebf8ff;
+  }
+  
+  .delete-button {
+    color: #f56565;
+  }
+  
+  .delete-button:hover:not(:disabled) {
+    background-color: #fff5f5;
+  }
+  
+  .delete-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .reset-password-button {
+    color: #ecc94b;
+  }
+  
+  .reset-password-button:hover {
+    background-color: #fefcbf;
+  }
+  
+  .loading-cell,
+  .no-results-cell {
+    text-align: center;
+    padding: 2rem;
+    color: #718096;
+    font-style: italic;
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .pagination-info {
+    font-size: 0.875rem;
+    color: #4a5568;
+  }
+  
+  .pagination-buttons {
+    display: flex;
+    gap: 0.25rem;
+  }
+  
+  .pagination-button {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    color: #4a5568;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #f7fafc;
+  }
+  
+  .pagination-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination-select {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    background-color: #ffffff;
+    color: #4a5568;
+    font-size: 0.875rem;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .user-row {
+    animation: fadeIn 0.3s ease-in-out;
+  }

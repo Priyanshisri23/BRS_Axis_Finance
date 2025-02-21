@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ process_name }} - Success Notification</title>
+    <style>
+        body {
+            font-family: {{ email_styles.font_family }};
+            color: {{ email_styles.font_color }};
+            background-color: {{ email_styles.background_color }};
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: {{ email_styles.container_padding }};
+            background-color: {{ email_styles.background_color }};
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+        }
+        .header {
+            background-color: {{ email_styles.success_header_background }};
+            color: {{ email_styles.success_header_color }};
+            padding: {{ email_styles.header_padding }};
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .content {
+            margin-top: {{ email_styles.content_margin_top }};
+            padding: 10px 0;
+            text-align: left;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .footer {
+            margin-top: {{ email_styles.footer_margin_top }};
+            background-color: {{ email_styles.footer_background }};
+            color: {{ email_styles.footer_color }};
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>{{ process_name }} - Success</h1>
+        </div>
+
+        <!-- Body Content -->
+        <div class="content">
+            <p>Hello Team,</p>
+            <p>The <strong>{{ file_name }}</strong> process was successfully completed on <strong>{{ datetime }}</strong>.</p>
+            <p>Thank you for your attention.</p>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            &copy; {{ current_year }} Axis Finance. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
